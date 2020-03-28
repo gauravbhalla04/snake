@@ -1,0 +1,221 @@
+a {
+    text-decoration: none;
+    color: #ff9300;
+}
+
+
+body {
+    background: #141414;
+    margin: 0px;
+    z-index: 0;
+    font-family: 'Sen', sans-serif;
+}
+
+footer {
+  position: fixed;
+  margin-top: 2%;
+  height: 50;
+  width: 100%;
+  font-size: 0.8em;
+  left: 5%;
+  bottom: 5%;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+#logo {
+    width: 21%;
+}
+
+#footerText {
+    color: #ff9300;
+    font-size: 0.8rem;
+}
+
+#navbar{
+    margin: 0px;
+    float: left;
+    justify-content: center;
+}
+
+.menuItemsOne {
+    grid-column: menu-start/menu-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    padding-right: 1em;
+    z-index: 2;
+    position: absolute;
+    top: 1.6rem;
+    left: 40%;
+
+    transform: translate(-50%, -50%);
+
+}
+.menuItemsTwo {
+    grid-column: menu-start/menu-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    padding-right: 1em;
+    z-index: 2;
+    position: absolute;
+    top: 1.6rem;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
+.menuItemsThree {
+    grid-column: menu-start/menu-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    padding-right: 1em;
+    z-index: 2;
+    position: absolute;
+    top: 1.6rem;
+    left: 62.5%;
+
+    transform: translate(-50%, -50%);
+
+}
+.menuItemsFour{
+    grid-column: menu-start/menu-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    padding-right: 1em;
+    z-index: 2;
+    position: absolute;
+    top: 1.6rem;
+    left: 70%;
+
+    transform: translate(-50%, -50%);
+
+}
+
+.inactive {
+    opacity: 0.7;
+}
+
+.socialsOne {
+
+    grid-column: menu-start/menu-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    padding-right: 1em;
+    z-index: 2;
+    position: absolute;
+    top: 1.6rem;
+    left: 85%;
+
+    transform: translate(-50%, -50%);
+}
+.socialsTwo {
+
+    grid-column: menu-start/menu-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    padding-right: 1em;
+    z-index: 2;
+    position: absolute;
+    top: 1.6rem;
+    left: 90%;
+
+    transform: translate(-50%, -50%);
+}
+.socialsThree {
+    grid-column: menu-start/menu-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    padding-right: 1em;
+    z-index: 2;
+    position: absolute;
+    top: 1.6rem;
+    left: 95%;
+
+    transform: translate(-50%, -50%);
+}
+
+.projectThumbnail {
+    width: 50rem;
+}
+
+@media screen and (max-width: 1600px){
+    /*For Mobile only*/
+
+    .navBar {
+        grid-template-columns: [start] 1fr [logo-end] 1fr [menu-start] 1fr [menu-end];
+        grid-template-rows: repeat(2,50px);
+    }
+
+    .socialsOne{
+        position: fixed;
+        right :0;
+        bottom: 0;
+        padding: 1em;
+    }
+    .socialsTwo{
+        position: fixed;
+        right :0;
+        bottom: 0;
+        padding: 1em;
+    }
+    .socialsThree{
+        position: fixed;
+        right :0;
+        bottom: 0;
+        padding: 1em;
+    }
+
+}
+
+
+@media screen and (max-width: 700px){
+    /*For Mobile only*/
+    a {
+        font-size: 0.3rem;
+    }
+
+
+    #logo {
+        width: 9rem;
+        align-self: flex-start;
+        padding-left:0;
+        padding-top:0.6em;
+
+    }
+    .menuItemsOne{
+        align-self: flex-end;
+        font-size: medium;
+        margin-right:1em;
+    }
+    .menuItemsTwo{
+        align-self: flex-end;
+        font-size: medium;
+        margin-right:1em;
+    }
+    .menuItemsThree{
+        align-self: flex-end;
+        font-size: medium;
+        margin-right:1em;
+    }
+    .menuItemsFour{
+        align-self: flex-end;
+        font-size: medium;
+        margin-right:1em;
+    }
+}
